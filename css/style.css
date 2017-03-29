@@ -1,721 +1,114 @@
 body {
-	font-family: "PT Sans", "Tahoma", sans-serif;
-	font-size: 14px;
-	font-weight: normal;
-	line-height: 26px;
-
-	width: 100%;
-	margin: 0;
+	background-color: #e6e6e6;
 	padding: 0;
+	margin: 0;
+	font-family: 'Comfortaa', cursive;
+	color: black;
+	font-size: 15px;
+	font-style: italic;
+	line-height: 35px;
+}
 
-	text-align: center;
-	text-transform: uppercase;
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 25px 50px;
+}
 
-	background-color: #f2f2f2;
+.container-gray {
+	background-color: #4d4d4d;
 }
 
 .main-container {
-	position: relative;
-
-	max-width: 1200px;
-	height: auto;
-	margin: 0 auto;
-
-	background-color: #ffffff;
-	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
-}
-
-/*СТИЛИ ДЛЯ ФОНА ГЛАВНОЙ СТРАНИЦЫ*/
-/*-----------------------------------------------------------------------*/
-.index-background {
-	position: relative;
-}
-
-.index-background img {
-	width: 1200px;
-	height: 508px;
-}
-
-.index-background::before {
-	position: absolute;
-	top: 76px;
-	left: 371px;
-
-	width: 458px;
-	height: 352px;
-
-	content: "";
-
-	background-image: url("../img/welcome.png");
+	background-color: #fff;
+	background-image: url("../img/19.png");
 	background-repeat: no-repeat;
+	background-position: -68px -229px;
 }
 
-.index-background::after {
-	position: absolute;
-	top: 451px;
-	left: 0;
+.container img {
+	display: inline-block;
+	vertical-align: top;
+	margin: 100px 0px;
+}
 
-	width: 1200px;
-	height: 57px;
+.content {
+	display: inline-block;
+	vertical-align: top;
+	min-width: 300px;
+	max-width: 650px;
+	margin: 256px 0;
+    margin-left: 100px;
+}
 
-	content: "";
-
-	background-image: url("../img/angle.png");
+.portfolio {
+	color: black;
+	padding: 40px 77px;
+	font-size: 16px;
+	line-height: 20px;
+	
+	text-transform: uppercase;
+	background-image: url("../img/12.png");
+	background-size: 300px 100px;
 	background-repeat: no-repeat;
+	width: 146px;
+	height: 17px;
 }
 
-/*ОФОРМЛЕНИЕ ГЛАВНОЙ СТРАНИЦЫ*/
-/*ЗАГОЛОВОК. ОСНОВНАЯ НАВИГАЦИЯ*/
-/*-----------------------------------------------------------------------*/
-.main-header {
-	position: relative;
-
-	margin: 0;
-	padding: 0 72px;
+.portfolio:hover {
+	opacity: 0.7;
+	cursor: pointer;
 }
 
-.main-navigation ul {
-	margin: 0;
-	padding: 0;
-
-	list-style: none;
-}
-
-.main-navigation li {
-	font-weight: bold;
-
-	width: 240px;
-	padding: 15px 0;
-}
-
-.main-navigation a {
-	font-weight: bold;
-
-	text-decoration: none;
-
+.portfolio:active {
 	color: black;
 }
 
-.main-navigation a:hover {
-	color: #81b3d2;
-}
-
-.main-navigation a:active {
-	color: #cacaca;
-}
-
-.main-navigation .main-navigation-active,
-.main-navigation .main-navigation-active:hover,
-.main-navigation .main-navigation-active:active {
-	color: #766357;
-}
-
-.main-navigation li {
+.post {
+	color: #e0b30f;
 	float: left;
-
-	text-align: left;
-}
-
-.main-navigation li:nth-child(2n) {
-	float: right;
-
-	text-align: right;
-}
-
-/*ЛОГОТИП*/
-/*-----------------------------------------------------------------------*/
-.index-logo {
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	left: 530px;
-}
-
-.index-logo img {
-	width: 138px;
-	height: 70px;
-}
-
-
-/*ОСНОВНОЙ БЛОК*/
-/*-----------------------------------------------------------------------*/
-.main-content {
-	margin: 0;
-	padding: 0;
-}
-
-.advertise {
-	font-size: 21px;
-	font-weight: bold;
-
-	max-width: 576px;
-	margin: 0 auto;
-	margin-top: 53px;
-	margin-bottom: 27px;
-
-	color: black;
-}
-
-.advertise-details {
-	max-width: 576px;
-	margin: 0 auto;
-	margin-bottom: 50px;
-}
-
-/*БЛОК 30% ОТ ШИРИНЫ РОДИТЕЛЬСКОГО КОНТЕЙНЕРА*/
-.feature {
-	width: 33.3%;
-}
-
-.feature h2 {
-	font-size: 21px;
-	line-height: 21px;
-}
-
-/*ПРИЧИНА №1,2 ГОЛУБОЙ БЛОК*/
-/*-----------------------------------------------------------------------*/
-.block-blue {
-	min-height: 256px;
-
-	color: white;
-	background-color: #81b3d2;
-}
-
-.image {
-	width: 66.6%;
-	max-height: 256px;
-}
-
-.image img {
-	width: 800px;
-	height: 256px;
-}
-
-.block-blue .image,
-.block-blue .feature {
-	float: left;
-}
-
-.block-blue h2 {
-	margin-top: 55px;
-	margin-bottom: 21px;
-	padding: 0 120px;
-}
-
-.block-blue p {
-	line-height: 21px;
-
 	margin-top: 20px;
-	margin-bottom: 50px;
-	padding: 0 47px;
+	font-size: 16px;
 }
 
-/*БЛОК С РЕКОММЕНДАЦИЯМИ*/
-/*-----------------------------------------------------------------------*/
-.recommendations {
-	min-height: 330px;
-}
-
-.recommendations img {
-	width: 76px;
-	height: 76px;
-}
-
-
-.recommendations .feature {
-	float: left;
-
-	padding-top: 55px;
-}
-
-.recommendations h2 {
-	margin: 0 30px;
-	margin-top: 22px;
-	margin-bottom: 24px;
-}
-
-.recommendations p {
-	line-height: 21px;
-
-	margin-bottom: 82px;
-	padding: 0 55px;
-}
-
-/*ПРИЧИНЫ №3-5, СЕРЫЙ БЛОК*/
-/*-----------------------------------------------------------------------*/
-.block-gray {
-	position: relative;
-	z-index: 2;
-
-	min-height: 256px;
-	padding-bottom: 42px;
-
-	background-color: #eeeeee;
-}
-
-.block-gray .feature {
-	float: left;
-}
-
-.block-gray h2 {
-	margin-top: 48px;
-	margin-bottom: 21px;
-	padding: 0 130px;
-}
-
-.block-gray p {
-	line-height: 21px;
-
-	margin-top: 18px;
-	padding: 0 60px;
-}
-
-/* ЗАИНТЕРЕСОВАЛИСЬ? = БЛОК ДЛЯ ВЫЗОВА ФОРМЫ ЗАКАЗА*/
-/*-----------------------------------------------------------------------*/
-.order {
-	position: relative;
-	z-index: 2;
-
-	padding-top: 33px;
-
-	background-color: white;
-}
-
-.order h2 {
-	font-size: 30px;
-	font-weight: bold;
-	line-height: 24px;
-
-	margin-bottom: 30px;
-}
-
-.order p {
-	line-height: 24px;
-
-	margin-bottom: 46px;
-}
-
-.order .search {
-	font-size: 21px;
-	font-weight: bold;
-	line-height: 25px;
-
-	display: inline-block;
-
-	width: 569px;
-	padding: 31px 0;
-
-	vertical-align: top;
+.post:hover {
 	text-decoration: none;
+}
 
+.post:active {
 	color: white;
-	background-color: #766357;
-}
-
-/*СТИЛИ ДЛЯ МОДАЛЬНОГО ОКНА*/
-/*-----------------------------------------------------------------------*/
-.modal-order-form {
-	font-size: 14px;
-	font-weight: bold;
-	line-height: 38px;
-
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	left: 316px;
-
-	width: 569px;
-	min-height: 390px;
-	padding: 0 55px;
-	padding-top: 54px;
-
-	text-align: left;
-
-	background-color: white;
-	box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
-}
-
-@-webkit-keyframes emergence {
-	0% {
-		-webkit-transform: translateY(-400px);
-				transform: translateY(-400px);
-	}
-	100% {
-		-webkit-transform: translateY(0);
-				transform: translateY(0);
-	}
-}
-
-@keyframes emergence {
-	0% {
-		transform: translateY(-400px);
-	}
-	100% {
-		transform: translateY(0);
-	}
-}
-
-@-webkit-keyframes vanishing {
-	0% {
-		-webkit-transform: translateY(0);
-				transform: translateY(0);
-	}
-	100% {
-		-webkit-transform: translateY(-400px);
-				transform: translateY(-400px);
-	}
-}
-
-@keyframes vanishing {
-	0% {
-		transform: translateY(0);
-	}
-	100% {
-		transform: translateY(-400px);
-	}
-}
-
-.emergence {
-	-webkit-animation-name: emergence;
-			animation-name: emergence;
-	-webkit-animation-duration: 0.5s;
-			animation-duration: 0.5s;
-}
-
-.vanishing {
-	-webkit-animation-name: vanishing;
-			animation-name: vanishing;
-	-webkit-animation-duration: 0.5s;
-			animation-duration: 0.5s;
-
-	-webkit-animation-fill-mode: forwards;
-			animation-fill-mode: forwards;
-}
-
-.modal-block-long {
-	position: relative;
-
-	min-height: 38px;
-	margin-bottom: 30px;
-}
-
-.modal-block-short {
-	display: inline-block;
-
-	max-width: 227px;
-	min-height: 38px;
-
-	vertical-align: top;
-}
-
-.modal-block-name {
-	font-weight: bold;
-
-	display: inline-block;
-
-	width: 112px;
-
-	vertical-align: top;
-}
-
-.child-name {
-	padding-left: 50px;
-}
-
-.calendar {
-	position: absolute;
-	top: 8px;
-	right: 9px;
-
-	display: block;
-
-	width: 22px;
-	height: 22px;
-
-	border: none;
-	background-color: transparent;
-	background-image: url("../img/main-sprite.png");
-	background-repeat: no-repeat;
-	background-position: -137px -46px;
-}
-
-.calendar:hover {
-	background-position: -137px -8px;
-}
-
-.calendar:active {
-	background-position: -174px -8px;
-}
-
-.long,
-.short {
-	font: inherit;
-	font-size: 14px;
-	line-height: 28px;
-
-	text-transform: uppercase;
-
-	border: none;
-}
-
-.long {
-	right: 0;
-
-	float: right;
-
-	width: 346px;
-	height: 38px;
-	padding-right: 40px;
-	padding-left: 13px;
-
-	background-color: #f2f2f2;
-}
-
-.long:hover {
-	background-color: #ebebeb;
-}
-
-.long:focus {
-	outline: 1px solid #e5e5e5;
-	background-color: white;
-}
-
-.people-quantity {
-	float: right;
-
-	width: 115px;
-	height: 38px;
-	padding: 0;
-
-	background-color: #f2f2f2;
-}
-
-.short {
-	display: inline-block;
-
-	width: 33px;
-	height: 38px;
-	margin: 0;
-	padding-left: 4px;
-
-	text-align: center;
-	vertical-align: top;
-
-	color: black;
-	background: #f2f2f2;
-}
-
-.p-quantity {
-	position: relative;
-
-	display: inline-block;
-
-	width: 37px;
-	height: 38px;
-
-	vertical-align: top;
-
-	border: none;
-	background: #f2f2f2;
-}
-
-.p-quantity::before,
-.p-quantity::after {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-
-	content: "";
-
-	background-repeat: no-repeat;
-}
-
-/*уменьшить кол-во человек*/
-.minus::before {
-	position: absolute;
-
-	width: 12px;
-	height: 3px;
-
-	-webkit-transform: translate(-6px, -1.5px);
-			transform: translate(-6px, -1.5px);
-
-	background-color: #a9a9a9;
-}
-
-.minus:hover::before {
-	background-color: #000000;
-}
-
-.minus:active::before {
-	background-color: #81b3d2;
-}
-
-/*увеличить кол-во человек*/
-.plus {
-	margin-right: -5px;
-}
-
-.plus::before,
-.plus::after {
-	position: absolute;
-	top: 17px;
-	left: 13.5px;
-
-	width: 12px;
-	height: 3px;
-
-	content: "";
-
-	background-color: #a9a9a9;
-}
-
-.plus::after {
-	-webkit-transform: rotate(90deg);
-			transform: rotate(90deg);
-}
-
-.plus:hover::before,
-.plus:hover::after {
-	background-color: #000000;
-}
-
-.plus:active::before,
-.plus:active::after {
-	background-color: #81b3d2;
-}
-
-/*кнопка Найти--------------------------------------------------------*/
-.modal-search {
-	font: inherit;
-	font-size: 21px;
-	font-weight: bold;
-	line-height: 26px;
-
-	display: block;
-
-	width: 458px;
-	height: 58px;
-	margin: 0 auto;
-	margin-top: 52px;
-	margin-bottom: 54px;
-
-	text-transform: uppercase;
-
-	color: white;
-	border: none;
-	background-color: #81b3d2;
-}
-
-.modal-search:hover {
-	cursor: pointer;
-
-	background-color: #669ec0;
-}
-
-.modal-search:focus {
-	cursor: pointer;
-
-	color: rgba(255, 255, 255, 0.3);
-	background-color: #5496bd;
-}
-
-/*КАРТА*/
-/*---------------------------------------------------------------------*/
-
-.map {
-	position: relative;
-
-	height: 593px;
-	margin-bottom: 0;
-}
-
-.map img {
-	width: 1200px;
-	height: 593px;
-}
-
-.hidden {
-	display: none;
-}
-
-/*ПОДВАЛ*/
-/*----------------------------------------------------------------------*/
-.main-footer {
-	width: 1200px;
-	min-height: 120px;
-	padding: 0 72px;
-
-	opacity: 0.9;
-	background-color: white;
-}
-
-.footer-abs {
-	position: absolute;
-	bottom: 0;
-}
-
-.footer-hashtag a {
-	font-size: 21px;
-	font-weight: bold;
-	line-height: 26px;
-
-	text-decoration: none;
-
-	color: black;
-}
-
-.footer-hashtag {
-	float: left;
-
-	width: 256px;
-	margin-right: 173px;
-	padding-top: 46px;
-}
-
-.footer-social {
-	float: left;
-
-	width: 200px;
-	margin-right: 5px;
-	padding-top: 35px;
-}
-
-.footer-copyright {
-	float: right;
-
-	max-width: 422px;
-	min-height: 120px;
-	padding-top: 41px;
-	padding-right: 33px;
-
-	text-align: right;
 }
 
 .btn {
-	font-size: 0;
-
-	display: inline-block;
-
-	width: 113px;
-	height: 39px;
-	margin-left: 2px;
-
-	vertical-align: middle;
-
-	background-image: url("../img/main-sprite.png");
-	background-repeat: no-repeat;
-	background-position: -8px -118px;
+	font-style: normal;
+	text-decoration: none;
 }
 
-.btn:hover {
-	background-image: url("../img/main-sprite.png");
-	background-position: -8px -8px;
+.btn-portfolio {
+	color: #e0b30f;
+	border: 1px #e0b30f solid;
+	font-size: 16px;
+	float: right;
+	padding: 20px 40px;
+	border-radius: 40px;
+	text-transform: uppercase;
 }
 
-.btn:active {
-	background-image: url("../img/main-sprite.png");
-	background-position: -8px -63px;
+.btn-portfolio:hover {
+	color: white;
+	border: 1px white solid;
+}
+
+.btn-portfolio:active {
+	color: black;
+	border: 1px black solid;
+}
+
+.clearfix::after {
+	display: table;
+	clear: both;
+
+	content: "";
 }
 
 .social-btn {
@@ -725,18 +118,20 @@ body {
 
 	display: inline-block;
 
-	width: 46px;
-	height: 48px;
-	margin-right: 2px;
+	width: 60px;
+	height: 60px;
+	margin-right: 10px;
 
 	vertical-align: top;
 	text-decoration: none;
+}
 
-	background-color: #81b3d2;
+footer {
+	text-align: center; 
 }
 
 .social-btn:hover {
-	background-color: #669ec0;
+	opacity: 0.7;
 }
 
 .social-btn:active {
@@ -750,583 +145,48 @@ body {
 
 	content: "";
 
-	background-image: url("../img/main-sprite.png");
+	background-image: url("../img/sprite.png");
 	background-repeat: no-repeat;
-}
-
-/*Twitter*/
-.social-btn-tw::before {
-	width: 17px;
-	height: 15px;
-
-	-webkit-transform: translate(-8.5px, -7.5px);
-			transform: translate(-8.5px, -7.5px);
-
-	background-position: -179px -147px;
-}
-
-.social-btn-tw:active::before {
-	opacity: 0.3;
 }
 
 /*Facebook*/
 .social-btn-fb::before {
-	width: 10px;
-	height: 19px;
+	width: 60px;
+    height: 60px;
+    background-position: -5px -5px;
 
-	-webkit-transform: translate(-5px, -9.5px);
-			transform: translate(-5px, -9.5px);
-
-	background-position: -206px -112px;
+	-webkit-transform: translate(-30px, -30px);
+			transform: translate(-30px, -30px);
 }
 
 .social-btn-fb:active::before {
 	opacity: 0.3;
 }
 
-/*Youtube*/
-.social-btn-yt::before {
-	width: 20px;
-	height: 16px;
+/*Skype*/
+.social-btn-sk::before {
+	width: 60px;
+    height: 60px;
+    background-position: -5px -75px;
 
-	-webkit-transform: translate(-10px, -8px);
-			transform: translate(-10px, -8px);
-
-	background-position: -62px -173px;
+	-webkit-transform: translate(-30px, -30px);
+			transform: translate(-30px, -30px);
 }
 
-.social-btn-yt:active::before {
+.social-btn-sk:active::before {
 	opacity: 0.3;
 }
 
-/*РАСПОРКА*/
-/*-----------------------------------------------------------------------*/
-.clearfix::after {
-	display: table;
-	clear: both;
+/*GitHub*/
+.social-btn-gh::before {
+	width: 60px;
+    height: 60px;
+    background-position: -75px -5px;
 
-	content: "";
+	-webkit-transform: translate(-30px, -30px);
+			transform: translate(-30px, -30px);
 }
 
-/*BOX-SIZING*/
-/*-----------------------------------------------------------------------*/
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
-}
-
-html {
-	box-sizing: border-box;
-}
-
-/*ОФОРМЛЕНИЕ ВКЛАДКИ "ГОСТИНИЦЫ"*/
-/*-----------------------------------------------------------------------*/
-/*ФОРМА С ОТБОРОЧНЫМИ КРИТЕРИЯМИ*/
-/*-----------------------------------------------------------------------*/
-.criteria {
-	min-height: 217px;
-	padding: 0 72px;
-	padding-top: 14px;
-
-	color: #ffffff;
-	background: #6e90ae url("../img/filter-background-3.jpg") no-repeat;
-}
-
-.criteria h2 {
-	font-size: 16px;
-	line-height: 21px;
-}
-
-.item-criterion {
-	float: left;
-
-	width: 255px;
-	margin: 0;
-	padding: 0;
-
-	text-align: left;
-	vertical-align: middle;
-}
-
-.item-criterion h2 {
-	margin-bottom: 26px;
-}
-
-.item-criterion input[type="checkbox"] {
-	display: none;
-}
-
-.item-criterion input[type="checkbox"] + label {
-	line-height: 20px;
-
-	position: relative;
-
-	display: block;
-
-	padding-bottom: 25px;
-	padding-left: 40px;
-
-	cursor: pointer;
-}
-
-.item-criterion input[type="checkbox"] + label::before {
-	position: absolute;
-	top: 0;
-	left: 0;
-
-	display: block;
-
-	width: 26px;
-	height: 22px;
-
-	content: "";
-
-	background-image: url("../img/main-sprite.png");
-	background-repeat: no-repeat;
-	background-position: -174px -46px;
-}
-
-.item-criterion input[type="checkbox"]:checked + label::before {
-	background-position: -137px -84px;
-}
-
-.item-criterion input[type="checkbox"]:disabled + label::before {
-	background-position: -137px -122px;
-}
-
-.item-criterion input[type="checkbox"]:checked:disabled + label::before {
-	background-position: -137px -160px;
-}
-
-/*ВКЛАДКА HOTELS - ЦЕНОВОЙ ФИЛЬТР*/
-/*-----------------------------------------------------------------------*/
-.price-criterion {
-	float: right;
-
-	width: 328px;
-
-	text-align: left;
-}
-
-.price-criterion h2 {
-	margin-bottom: 10px;
-}
-
-.price-controls {
-	font-size: 0;
-
-	position: relative;
-
-	height: 36px;
-	margin-bottom: 20px;
-	margin-left: 10px;
-
-	border: 2px solid #ffffff;
-	border-radius: 2px;
-}
-
-.price-controls::after {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-
-	width: 2px;
-	height: 22px;
-
-	content: "";
-	-webkit-transform: translate(-50%, -50%);
-			transform: translate(-50%, -50%);
-
-	background: #ffffff;
-}
-
-.price-controls label {
-	font-size: 14px;
-	line-height: 36px;
-
-	display: inline-block;
-
-	margin-top: -2px;
-
-	cursor: pointer;
-	vertical-align: top;
-}
-
-.price-controls .min-price,
-.price-controls .max-price {
-	width: 157px;
-	height: 36px;
-}
-
-.price-controls .min-price {
-	padding-left: 65px;
-}
-
-.price-controls .max-price {
-	padding-left: 52px;
-}
-
-.price-controls input {
-	font: inherit;
-
-	width: 50px;
-	height: 34px;
-	margin: 0;
-
-	color: inherit;
-	border: none;
-	background: none;
-}
-
-.range-controls {
-	position: relative;
-
-	margin-bottom: 32px;
-	margin-left: 11px;
-}
-
-.range-controls .scale {
-	height: 2px;
-
-	background: rgba(255, 255, 255, 0.3);
-}
-
-.range-controls .bar {
-	width: 80%;
-	height: 2px;
-
-	background: #ffffff;
-}
-
-.range-toggle {
-	position: absolute;
-	top: -9px;
-
-	width: 20px;
-	height: 20px;
-
-	cursor: pointer;
-
-	border: 8px solid #ffffff;
-	border-radius: 50%;
-	background: #ababab;
-	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-}
-
-.range-toggle:hover {
-	background: #1c4f80;
-}
-
-.range-toggle-min {
-	left: 0;
-}
-
-.range-toggle-max {
-	left: 80%;
-}
-
-.btn-transparent {
-	font-size: 14px;
-	line-height: 20px;
-
-	display: block;
-
-	margin: 0 auto;
-	padding: 6px 35px;
-
-	cursor: pointer;
-	text-transform: uppercase;
-
-	color: #ffffff;
-	border: 2px solid #ffffff;
-	border-radius: 2px;
-	background: transparent;
-}
-
-.btn-transparent:hover {
-	color: #000000;
-	background: #ffffff;
-}
-
-/*КАРТОЧКА ОТЕЛЯ*/
-/*-----------------------------------------------------------------------*/
-.hotel-card {
-	min-height: 151px;
-	padding: 0 72px;
-
-	border-bottom: 1px solid #e5e5e5;
-}
-
-.left-side .hotel-name {
-	text-decoration: none;
-
-	color: black;
-}
-
-.hotel-name:hover {
-	color: #81b3d2;
-}
-
-.hotel-name:active {
-	color: #cacaca;
-}
-
-.right-side {
-	float: right;
-
-	min-height: 90px;
-	margin-top: 25px;
-}
-
-.left-side {
-	float: left;
-
-	max-width: 730px;
-	min-height: 100px;
-	margin-top: 27px;
-}
-
-.hotel-info,
-.hotel-booking {
-	float: left;
-
-	width: 113px;
-	margin-right: 2px;
-	padding: 0;
-
-	text-align: left;
-}
-
-.hotel-picture {
-	float: left;
-
-	max-height: 90px;
-	margin-top: 30px;
-	margin-right: 30px;
-}
-
-.hotel-picture img {
-	width: 135px;
-	height: 90px;
-}
-
-.hotel-card h2 {
-	font-size: 21px;
-	line-height: 26px;
-	line-height: 21px;
-
-	margin: 0;
-	padding-bottom: 7px;
-
-	text-align: left;
-}
-
-.info-details,
-.booking-details {
-	font-weight: bold;
-
-	position: relative;
-
-	padding: 4.5px 17px;
-
-	text-decoration: none;
-
-	color: rgba(255, 255, 255, 1);
-}
-/*кнопка ПОДРОБНЕЕ*/
-/*-----------------------------------------------------------------------*/
-.info-details {
-	background-color: #81b3d2;
-}
-
-.info-details:hover {
-	background-color: #669ec0;
-}
-
-.info-details:active {
-	color: rgba(255, 255, 255, 0.3);
-	background-color: #5496bd;
-}
-/*кнопка ЗАБРОНИРОВАТЬ*/
-/*-----------------------------------------------------------------------*/
-.booking-details {
-	background-color: #766357;
-}
-
-.booking-details:hover {
-	background-color: #604e43;
-}
-
-.booking-details:active {
-	color: rgba(255, 255, 255, 0.3);
-	background-color: #503e33;
-}
-
-.type-price {
-	display: inline-block;
-
-	min-width: 113px;
-	padding-bottom: 12px;
-
-	vertical-align: top;
-}
-
-.hotel-raiting {
-	display: inline-block;
-
-	margin-top: 47px;
-	padding: 2px 13px;
-
-	vertical-align: top;
-
-	background-color: #f2f2f2;
-}
-
-.hotel-stars {
-	max-width: 102px;
-	height: 17px;
-	margin-top: 3px;
-	margin-left: 10px;
-
-	text-align: right;
-}
-
-/*ФИЛЬТР: кол-во результатов поиска/ сортировка/ навигационные клавиши*/
-/*-----------------------------------------------------------------------*/
-.filter {
-	min-height: 86px;
-	padding: 30px 72px;
-
-	border-bottom: 1px solid #e5e5e5;
-}
-
-.filter ul {
-	list-style: none;
-}
-
-.filter-quantity {
-	font-size: 21px;
-	line-height: 26px;
-
-	float: left;
-
-	margin: 0;
-}
-
-.filter-types {
-	float: left;
-
-	max-width: 730px;
-	margin: 0;
-	margin-right: 100px;
-	margin-left: 47px;
-	padding: 0;
-
-	text-align: left;
-}
-
-.filter .type-active,
-.filter .type-active:hover,
-.filter .type-active:active {
-	color: #81b3d2;
-	border: none;
-}
-
-.filter-types a {
-	font-size: 12px;
-	line-height: 18px;
-
-	text-decoration: none;
-
-	color: #cacaca;
-	border-bottom: 1px dotted #81b3d2;
-}
-
-.filter-types li:first-child {
-	margin-right: 35px;
-}
-
-.filter-types li {
-	display: inline-block;
-
-	margin-right: 30px;
-
-	vertical-align: top;
-}
-
-.filter-types li:last-child {
-	margin-right: 0;
-}
-
-.filter-types a:hover {
-	color: #81b3d2;
-	border-bottom: 1px dotted #81b3d2;
-}
-
-.filter-types a:active {
-	color: #000000;
-	border: none;
-}
-
-.filter .sort,
-.filter .sort:hover,
-.filter .sort:active {
-	color: black;
-	border: none;
-}
-
-/*НАВИГАЦИОННЫЕ СТРЕЛКИ*/
-
-.switch {
-	float: right;
-}
-
-.switch a {
-	display: inline-block;
-
-	margin-left: 9px;
-
-	vertical-align: middle;
-}
-
-.switch .active {
-	background-position: -206px -86px;
-}
-
-.up,
-.down {
-	font-size: 0;
-
-	width: 11px;
-	height: 10px;
-
-	background-image: url("../img/main-sprite.png");
-	background-repeat: no-repeat;
-}
-
-.up {
-	padding-right: 12px;
-
-	background-position: -35px -173px;
-}
-
-.up:hover {
-	background-position: -212px -147px;
-}
-
-.up:active {
-	background-position: -8px -173px;
-}
-
-.down {
-	background-position: -179px -112px;
-}
-
-.down:hover {
-	background-position: -179px -86px;
-}
-
-.down:active {
-	background-position: -206px -86px;
+.social-btn-gh:active::before {
+	opacity: 0.3;
 }
