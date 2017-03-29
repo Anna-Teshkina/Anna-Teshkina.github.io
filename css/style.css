@@ -1,117 +1,81 @@
 body {
-	background-color: #e6e6e6;
-	padding: 0;
-	margin: 0;
 	font-family: 'Comfortaa', cursive;
-	color: black;
 	font-size: 15px;
 	font-style: italic;
 	line-height: 35px;
+
+	margin: 0;
+	padding: 0;
+
+	color: black;
+	background-color: #e6e6e6;
 }
 
 .container {
 	width: 1200px;
 	margin: 0 auto;
-	padding: 25px 50px;
+	padding: 32px 50px;
 }
 
 .container-gray {
+	text-align: center;
+
 	background-color: #4d4d4d;
 }
 
 .main-container {
 	background-color: #fff;
-	background-image: url("../img/19.png");
+	background-image: url('../img/background.png');
 	background-repeat: no-repeat;
 	background-position: -68px -229px;
 }
 
 .container img {
 	display: inline-block;
+
+	margin: 100px 0;
+
 	vertical-align: top;
-	margin: 100px 0px;
 }
 
 .content {
 	display: inline-block;
-	vertical-align: top;
+
 	min-width: 300px;
 	max-width: 650px;
 	margin: 256px 0;
-    margin-left: 100px;
+	margin-left: 100px;
+
+	vertical-align: top;
 }
 
 .portfolio {
-	color: black;
-	padding: 40px 77px;
 	font-size: 16px;
-	line-height: 20px;
-	
+	font-weight: bold;
+	font-style: normal;
+
+	margin: 10px;
+	padding: 21px 100px;
+
+	text-decoration: none;
 	text-transform: uppercase;
-	background-image: url("../img/12.png");
-	background-size: 300px 100px;
-	background-repeat: no-repeat;
-	width: 146px;
-	height: 17px;
+
+	color: #e0b30f;
+	border: 1px #e0b30f solid;
+	border-radius: 40px;
 }
 
 .portfolio:hover {
-	opacity: 0.7;
-	cursor: pointer;
-}
-
-.portfolio:active {
-	color: black;
-}
-
-.post {
-	color: #e0b30f;
-	float: left;
-	margin-top: 20px;
-	font-size: 16px;
-}
-
-.post:hover {
-	text-decoration: none;
-}
-
-.post:active {
-	color: white;
-}
-
-.btn {
-	font-style: normal;
-	text-decoration: none;
-}
-
-.btn-portfolio {
-	color: #e0b30f;
-	border: 1px #e0b30f solid;
-	font-size: 16px;
-	float: right;
-	padding: 20px 40px;
-	border-radius: 40px;
-	text-transform: uppercase;
-}
-
-.btn-portfolio:hover {
 	color: white;
 	border: 1px white solid;
 }
 
-.btn-portfolio:active {
+.portfolio:active {
 	color: black;
 	border: 1px black solid;
 }
 
-.clearfix::after {
-	display: table;
-	clear: both;
-
-	content: "";
-}
-
-.social-btn {
+.link {
 	font-size: 0;
 
 	position: relative;
@@ -126,67 +90,81 @@ body {
 	text-decoration: none;
 }
 
-footer {
-	text-align: center; 
+.link:hover {
+	opacity: .7;
 }
 
-.social-btn:hover {
-	opacity: 0.7;
-}
-
-.social-btn:active {
+.link:active {
 	background-color: #5496bd;
 }
 
-.social-btn::before {
+.link::before {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 
-	content: "";
+	content: '';
 
-	background-image: url("../img/sprite.png");
+	background-image: url('../img/sprite.png');
 	background-repeat: no-repeat;
 }
 
 /*Facebook*/
-.social-btn-fb::before {
+.link-fb::before {
 	width: 60px;
-    height: 60px;
-    background-position: -5px -5px;
+	height: 60px;
 
 	-webkit-transform: translate(-30px, -30px);
-			transform: translate(-30px, -30px);
+	transform: translate(-30px, -30px);
+
+	background-position: -75px -5px;
 }
 
-.social-btn-fb:active::before {
-	opacity: 0.3;
+.link-fb:active::before {
+	opacity: .3;
 }
 
 /*Skype*/
-.social-btn-sk::before {
+.link-sk::before {
 	width: 60px;
-    height: 60px;
-    background-position: -5px -75px;
+	height: 60px;
 
 	-webkit-transform: translate(-30px, -30px);
-			transform: translate(-30px, -30px);
+	transform: translate(-30px, -30px);
+
+	background-position: -75px -75px;
 }
 
-.social-btn-sk:active::before {
-	opacity: 0.3;
+.link-sk:active::before {
+	opacity: .3;
 }
 
 /*GitHub*/
-.social-btn-gh::before {
+.link-gh::before {
 	width: 60px;
-    height: 60px;
-    background-position: -75px -5px;
+	height: 60px;
 
 	-webkit-transform: translate(-30px, -30px);
-			transform: translate(-30px, -30px);
+	transform: translate(-30px, -30px);
+
+	background-position: -5px -75px;
 }
 
-.social-btn-gh:active::before {
-	opacity: 0.3;
+.link-gh:active::before {
+	opacity: .3;
+}
+
+/*Post*/
+.link-mail::before {
+	width: 60px;
+	height: 60px;
+
+	-webkit-transform: translate(-30px, -30px);
+	transform: translate(-30px, -30px);
+
+	background-position: -5px -5px;
+}
+
+.link-mail:active::before {
+	opacity: .3;
 }
