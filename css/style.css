@@ -109,21 +109,6 @@ body {
 	background-repeat: no-repeat;
 }
 
-/*Facebook*/
-.link-fb::before {
-	width: 60px;
-	height: 60px;
-
-	-webkit-transform: translate(-30px, -30px);
-	transform: translate(-30px, -30px);
-
-	background-position: -75px -5px;
-}
-
-.link-fb:active::before {
-	opacity: .3;
-}
-
 /*Skype*/
 .link-sk::before {
 	width: 60px;
@@ -132,7 +117,7 @@ body {
 	-webkit-transform: translate(-30px, -30px);
 	transform: translate(-30px, -30px);
 
-	background-position: -75px -75px;
+	background-position: -5px -75px;
 }
 
 .link-sk:active::before {
@@ -147,7 +132,7 @@ body {
 	-webkit-transform: translate(-30px, -30px);
 	transform: translate(-30px, -30px);
 
-	background-position: -5px -75px;
+	 background-position: -75px -5px;
 }
 
 .link-gh:active::before {
